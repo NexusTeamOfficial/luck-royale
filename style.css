@@ -1,0 +1,83 @@
+.royale-container {
+    background: #24262b;
+    padding: 32px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+    max-width: 700px;
+}
+.item {
+    background: #23272e;
+    border: 2px solid #393e46;
+    border-radius: 12px;
+    padding: 16px 8px 8px 8px;
+    width: 90px;
+    min-height: 120px;
+    text-align: center;
+    transition: border 0.3s;
+    position: relative;
+}
+.item.selected {
+    border: 2.5px solid #ffd700;
+    box-shadow: 0 0 16px #ffd70099;
+}
+.item img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+.item .limit {
+    font-size: 0.9em;
+    color: #9cf;
+    margin-top: 2px;
+}
+.item.rare {
+    border: 2.5px solid #00f0ff;
+    box-shadow: 0 0 18px #00f0ffaa;
+}
+.item .rare-badge {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    background: linear-gradient(90deg,#09f,#0ff);
+    color: #fff;
+    font-size: 0.8em;
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+button#spinBtn {
+    margin-top: 20px;
+    padding: 12px 36px;
+    background: linear-gradient(90deg,#ffba00 20%,#ff6a00 80%);
+    color: #23272e;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button#spinBtn:hover {
+    background: linear-gradient(90deg,#ffba00 0%,#ffd700 100%);
+}
+#result {
+    margin-top: 24px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffd700;
+    min-height: 24px;
+}
+.disclaimer {
+    color: #888;
+    font-size: 0.95em;
+    margin-top: 18px;
+}
